@@ -10,7 +10,7 @@ Lista de tareas:
 
 - [x] Definir tema del proyecto.
 
-- [ ] Crear primera aplicación (users no cuenta para esto).
+- [x] Crear primera aplicación (users no cuenta para esto).
 
 - [ ] Crear tres vistas con sus urlpath, una de ellas parametrizada.
 
