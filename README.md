@@ -8,7 +8,7 @@ Lista de tareas:
 
 - [x] Crear repositorio con base del proyecto.
 
-- [ ] Definir tema del proyecto.
+- [x] Definir tema del proyecto.
 
 - [ ] Crear primera aplicación (users no cuenta para esto).
 
