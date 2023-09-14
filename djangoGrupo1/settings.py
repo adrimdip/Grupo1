@@ -42,10 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # De librerías externas:
-    #...
+    'bootstrap5',
 
     # Aplicaciones del proyecto:
     'users',
+    'escribania',
 ]
 
 MIDDLEWARE = [
