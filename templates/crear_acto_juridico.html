@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} Nuevo Acto Jurídico {% endblock %}
+
+{% block content %}
+
+  <header>
+    <h1>Ingresar Acto Jurídico</h1>
+  </header>
+
+  <form method="post">
+    {% csrf_token %} 
+    {{ form.as_div }} 
+    <button typm="submit">Guardar</button>
+  </form>
+
+{% endblock %}
