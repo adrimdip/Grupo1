@@ -12,6 +12,8 @@ Lista de tareas:
 
 - [x] Crear primera aplicación (users no cuenta para esto).
 
-- [ ] Crear tres vistas con sus urlpath, una de ellas parametrizada.
+- [x] Crear tres vistas con sus urlpath, una de ellas parametrizada.
 
-- [ ] Crear templates para las vistas.
+- [x] Crear templates para las vistas.
+
+:tada:
