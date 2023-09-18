@@ -35,3 +35,72 @@ h1, h2 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* Animación encabezado */
+h1, h2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: fadeInUp 0.5s ease-in-out; /* Agregar animación fadeInUp de 1 segundo */
+}
+
+/* Animación barra de navegación */
+.navbar {
+  color: white;
+  text-align: center;
+  animation: slideInDown 0.5s ease-in-out; /* Agregar animación slideInDown de 1 segundo */
+}
+
+/* Animación tabla */
+.table {
+  max-width: 50vh;
+  margin-top: 15px;
+  animation: scaleIn 0.5s ease-in-out; /* Agregar animación scaleIn de 1 segundo */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.boton-actualizar {
+  background-color: #3498db; /* Color de fondo normal */
+  color: #ffffff; /* Color de texto */
+  padding: 10px 20px; /* Ajusta el padding según tus necesidades */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Agrega una transición suave de color de fondo */
+}
+
+
+.btn-round {
+  border-radius: 5px;
+}
+
+

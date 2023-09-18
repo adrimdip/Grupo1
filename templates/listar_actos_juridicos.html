@@ -24,7 +24,7 @@
             <td>{{ acto.id }} </td>
             <td>{{ acto.nombre|upper }}</td>
             <td>
-              <a href="{% url 'actualizar_acto_juridico' acto.id %}" role="button">Actualizar</a>
+            <a href="{% url 'actualizar_acto_juridico' acto.id %}" role="button" class="btn-actualizar">Actualizar</a>
             </td>
           </tr>
         {% endfor %}

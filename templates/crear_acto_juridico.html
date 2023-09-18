@@ -10,8 +10,8 @@
 
   <form method="post">
     {% csrf_token %} 
-    {{ form.as_div }} 
-    <button typm="submit">Guardar</button>
+    {{ form.as_p }}  
+    <button type="submit" class="btn btn-primary btn-round">Guardar</button>
   </form>
 
 {% endblock %}
