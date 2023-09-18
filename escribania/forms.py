@@ -11,3 +11,6 @@ class ActoJuridicoForm(forms.ModelForm):
     class Meta:
         model = ActoJuridico
         fields = ['nombre']
+        widgets = {
+            'nombre': forms.TextInput(attrs={'placeholder': 'Nombre del Acto Jurídico'}),
+        }
