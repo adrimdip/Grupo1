@@ -2,6 +2,7 @@
 Repositorio para proyecto del grupo 1 de Codo a Codo - Django 2023
 
 
+
 ### Primera presentación - semana del 18/09
 
 Lista de tareas:
