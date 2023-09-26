@@ -17,4 +17,16 @@ Lista de tareas:
 
 - [x] Crear templates para las vistas.
 
-:tada:
+
+
+### Segunda presentación - semana del 02/10
+
+Crear Django Forms que cumplan:
+
+- [ ] Validaciones en el front-end y en el back-end.
+
+- [ ] Asociado a un template propio.
+
+- [ ] Usado en una vista basada en clases.
+
+- [ ] Asociado a un modelo.
