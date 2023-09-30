@@ -15,16 +15,22 @@
 </head>
 <body>
 
-  
-
   <nav class="navbar navbar-expand bg-primary fixed-top" data-bs-theme="dark">
     <a class='navbar-brand px-3' up-follow href='/'>Inicio</a>
     <div class="navbar-nav px-2">
-      <a class='nav-item nav-link' href="#">Escribanos</a>
+      <a class='nav-item nav-link' href="{% url 'crear_escribano' %}">Escribanos</a>
       <a class='nav-item nav-link' href="{% url 'listar_actos_juridicos' %}">Actos Juridicos</a>
       <a class='nav-item nav-link' href="#">Cerrar sesion</a>
     </div>
   </nav>
+
+  {% if messages %}
+    <ul class="messages mt-5 pt-5">
+      {% for message in messages %} 
+        <li class="text-success">{{ message }}</li> 
+      {% endfor %} 
+    </ul> 
+  {% endif %}
 
   <main class="mt-5 pt-5">
     {% block content %}

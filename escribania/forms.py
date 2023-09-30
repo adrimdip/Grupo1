@@ -15,7 +15,7 @@ class EscribanoForm(forms.Form):
     caracter = forms.CharField(label="Carácter", help_text="(Titular / Adscripto)", required=True)
 
     def clean_caracter(self):
-        if self.cleaned_data["caracter"] != "Titular" or self.cleaned_data["caracter"] != "Adscripto":
+        if self.cleaned_data["caracter"] != "Titular" and self.cleaned_data["caracter"] != "Adscripto":
             raise ValidationError("El carácter debe ser Titular o Adscripto")
         
         return self.cleaned_data["caracter"]

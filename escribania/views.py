@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Escribano, ActoJuridico
 from .forms import EscribanoForm, ActoJuridicoForm
 from django.contrib import messages
+from django.urls import reverse
 
 
 
@@ -17,7 +18,7 @@ def crear_escribano(request):
         form = EscribanoForm(request.POST)
         if form.is_valid():
             messages.info(request, "Escribano cargado exitosamente.")
-            return redirect('crear_escribano')
+            return redirect(reverse("index"))
     else:
         form = EscribanoForm()
     return render(request, 'crear_escribano.html', {'form': form})
