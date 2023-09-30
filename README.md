@@ -27,6 +27,3 @@ Crear Django Forms que cumplan:
 
 - [ ] Asociado a un template propio.
 
-- [ ] Usado en una vista basada en clases.
-
-- [ ] Asociado a un modelo.
