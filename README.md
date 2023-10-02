@@ -23,7 +23,8 @@ Lista de tareas:
 
 Crear Django Forms que cumplan:
 
-- [ ] Validaciones en el front-end y en el back-end.
+- [x] Validaciones en el front-end y en el back-end.
 
-- [ ] Asociado a un template propio.
+- [x] Asociado a un template propio.
 
+:tada:
