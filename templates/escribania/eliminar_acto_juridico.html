@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Confirmar Eliminación de Acto Jurídico {% endblock %}
+
+{% block content %}
+  <header>
+    <h1>Confirmar Eliminación de Acto Jurídico</h1>
+  </header>
+
+  <p>¿Estás seguro de que deseas eliminar el Acto Jurídico "{{ acto_juridico.nombre }}"?</p>
+
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-round">Confirmar Eliminación</button>
+  </form>
+
+  <a href="{% url 'listar_actos_juridicos' %}" class="btn btn-round">Volver</a>
+{% endblock %}

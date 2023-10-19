@@ -4,9 +4,9 @@
 
 {% block content %}
 
-  <header>
-    <h1>Lista de Actos Jurídicos </h1>
-    <a class="btn btn-primary" href="{% url 'crear_acto_juridico' %}" role="button">Ingresar nuevo Acto Juridico</a>
+<header class="custom-header">
+    <h1>Lista de Actos Jurídicos</h1>
+    <a class="btn btn-round" href="{% url 'crear_acto_juridico' %}" role="button">Ingresar Acto Jurídico</a>
   </header>
 
   <div class="table-responsive text-center d-flex justify-content-center">
@@ -14,17 +14,20 @@
       <thead>
         <tr>
           <th scope="col">Código</th>
-          <th scope="col">Tipo de Acto Jurídico</th>
+          <th scope="col">Acto Jurídico</th>
           <th scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody class="table-group-divider">
-        {% for acto in actos_juridicos %} 
+        {% for acto in actos_juridicos %}
           <tr>
-            <td>{{ acto.id }} </td>
+            <td>{{ acto.id }}</td>
             <td>{{ acto.nombre|upper }}</td>
             <td>
-            <a href="{% url 'actualizar_acto_juridico' acto.id %}" role="button" class="btn-actualizar">Actualizar</a>
+              <div class="btn-group" role="group" aria-label="Acciones">
+                <a href="{% url 'actualizar_acto_juridico' acto.id %}" role="button" class="btn btn-round btn-primary">Actualizar</a>
+                <a href="{% url 'eliminar_acto_juridico' acto.id %}" role="button" class="btn btn-round btn-danger">Eliminar</a>
+              </div>
             </td>
           </tr>
         {% endfor %}
@@ -32,3 +35,8 @@
     </table>
   </div>
 {% endblock %}
+
+
+
+
+

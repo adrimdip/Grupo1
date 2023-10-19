@@ -71,3 +71,12 @@ def actualizar_acto_juridico(request, pk):
     else:
         form = ActoJuridicoForm(instance=acto_juridico)
     return render(request, 'crear_acto_juridico.html', {'form': form, 'acto_juridico': acto_juridico})
+
+from django.views.generic.edit import DeleteView
+from django.urls import reverse_lazy
+from .models import ActoJuridico
+
+class EliminarActoJuridico(DeleteView):
+    model = ActoJuridico
+    template_name = 'eliminar_acto_juridico.html'
+    success_url = reverse_lazy('listar_actos_juridicos')
